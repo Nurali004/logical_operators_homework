@@ -8,4 +8,10 @@ def main(x):
     Returns:
         bool: answer
     """
-    return 
+    x=abs(x)
+    return x//10 == x%10
+
+x=int(input("sonni kiriting:"))
+print(main(x))
+
+
