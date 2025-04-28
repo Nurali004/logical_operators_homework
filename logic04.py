@@ -7,4 +7,9 @@ def main(a,b):
     Returns:
         bool: answer
     """
-    return
+    return a%2 ==0 and b%2 ==0
+
+
+a=int(input("1-sonni kiriting:"))
+b=int(input("2-sonni kiriting:"))
+print(main(a,b))
