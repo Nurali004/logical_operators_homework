@@ -8,4 +8,10 @@ def main(a,b,c):
     Returns:
         bool: answer
     """
-    return
+    return (a>b>c) or (c>a>b)
+
+
+a=int(input("1-sonni kiriting:"))
+b=int(input("2-sonni kiriting:"))
+c=int(input("3-sonni kiriting:"))
+print(main(a,b,c))
