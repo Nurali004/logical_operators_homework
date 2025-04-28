@@ -1,9 +1,18 @@
 def main(a):
     """
-    Given a three-digit integer a,  check the following statement "All digits sum is odd".
+    Given a three-digit integer 'a', check the following statement:
+    "All digits sum is odd".
+
     Args:
-        a(int): parameter a
+        a (int): parameter a
+
     Returns:
-        bool: answer
+        bool: True if the sum of digits is odd, False otherwise
     """
-    return
+    a = abs(a)  # manfiy son bo'lsa, musbatga aylantiramiz
+    digit_sum = (a // 100) + (a // 10 % 10) + (a % 10)  # o‘nlik, yuzlik va birlik raqamlarni yig‘amiz
+    return digit_sum % 2 == 1  # yig‘indi toq bo‘lsa, True
+
+# Foydalanuvchidan son olish
+a = int(input("Sonni kiriting: "))
+print(main(a))  # natijani chiqarish
