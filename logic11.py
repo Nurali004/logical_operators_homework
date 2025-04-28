@@ -6,4 +6,7 @@ def main(a):
     Returns:
         bool: answer
     """
-    return
+    return 100 <=abs(a) <=999
+
+a=int(input("sonni kiriting:"))
+print(main(a))
