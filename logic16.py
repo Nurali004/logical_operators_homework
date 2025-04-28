@@ -6,4 +6,9 @@ def main(a):
     Returns:
         bool: answer
     """
-    return
+    
+    return 1000 <= a <=99999
+
+
+a=int(input("sonni kiriting:"))
+print(main(a))
